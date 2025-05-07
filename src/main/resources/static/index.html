@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pet.shopz</title>
+</head>
+<body>
+<nav>
+    <img src="./assets/paw.svg" alt="">
+    <h1>Pet.Shopz</h1>
+</nav>
+<main>
+    <div>
+        <form id="forms">
+            <label for="animal-name">Nome:</label>
+            <input type="text" id="animal-name" name="animal-name" placeholder="Nome do Animal" required>
+            <label for="animal-type">Tipo:</label>
+            <input type="text" id="animal-type" name="animal-type" placeholder="Cão, gato..." required>
+            <label for="animal-age">Idade:</label>
+            <input type="number" id="animal-age" name="animal-age" placeholder="Em anos" required>
+            <label for="animal-owner">Dono:</label>
+            <input type="text" id="animal-owner" name="animal-owner" placeholder="Nome do Dono" required>
+
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+    <div id="container-cards"></div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
