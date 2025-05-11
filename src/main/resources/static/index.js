@@ -16,8 +16,8 @@ const form = document.getElementById("forms");
             owner: animalOwner.value
         }).then(response => {
             alert("Animal Cadastrado", response.data);
-            listarAnimals();
-            form.reset();
+            listarAnimals(); // atualizar a lista
+            form.reset(); // deixar os inputs em branco
         }).catch(error => {
             console.error("Erro ao cadastrar:", error);
         });
